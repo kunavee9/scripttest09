@@ -22,4 +22,5 @@ steps:
 - script: |
     pwd
     ls -lrta
-#   echo ${{parameters.Inputs}}
+    ./newscript.sh
+    echo ${{parameters.Inputs}}
