@@ -22,6 +22,6 @@ steps:
 - script: |
     pwd
     ls -lrta
-    chmod 777 newscript.sh
-    ./newscript.sh ${{parameters.Inputs}}
+    chmod 755 newscript.sh
+    /home/vsts/work/1/s/newscript.sh ${{parameters.Inputs}}
     # echo ${{parameters.Inputs}}
