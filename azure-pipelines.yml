@@ -10,10 +10,14 @@ pool:
   vmImage: ubuntu-latest
 
 parameters:
-  - name: Inputs
+  - name: firstinput
     displayName: Enter first input
     type: string
     default: Helloworld
+  - name: secondinput
+    displayName: Enter second input
+    type: string
+    default: Insane
 
 steps:
 # - script: echo Hello, world!
@@ -23,5 +27,5 @@ steps:
     pwd
     ls -lrta
     chmod 755 newscript.sh
-    /home/vsts/work/1/s/newscript.sh ${{parameters.Inputs}}
-    # echo ${{parameters.Inputs}}
+    /home/vsts/work/1/s/newscript.sh ${{parameters.firstinput}} ${{parameters.secondinput}}
+    
