@@ -22,5 +22,6 @@ steps:
 - script: |
     pwd
     ls -lrta
+    chmod 777 newscript.sh
     ./newscript.sh
     echo ${{parameters.Inputs}}
