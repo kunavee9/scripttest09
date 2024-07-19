@@ -16,8 +16,8 @@ parameters:
     default: Helloworld
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+# - script: echo Hello, world!
+#   displayName: 'Run a one-line script'
 
 - script: |
     echo ${{parameters.Inputs}}
