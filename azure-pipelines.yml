@@ -20,4 +20,4 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    echo $(parameter.input)
+    echo ${{parameters.Inputs}}
