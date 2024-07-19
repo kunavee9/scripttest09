@@ -23,5 +23,5 @@ steps:
     pwd
     ls -lrta
     chmod 777 newscript.sh
-    ./newscript.sh
-    echo ${{parameters.Inputs}}
+    ./newscript.sh ${{parameters.Inputs}}
+    # echo ${{parameters.Inputs}}
