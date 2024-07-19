@@ -20,4 +20,6 @@ steps:
 #   displayName: 'Run a one-line script'
 
 - script: |
-    echo ${{parameters.Inputs}}
+    pwd
+    ls -lrta
+#   echo ${{parameters.Inputs}}
