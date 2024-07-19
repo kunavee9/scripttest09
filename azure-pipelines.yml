@@ -13,6 +13,7 @@ parameters:
   - name: Inputs
     displayName: Enter first input
     type: string
+    default: Helloworld
 
 steps:
 - script: echo Hello, world!
